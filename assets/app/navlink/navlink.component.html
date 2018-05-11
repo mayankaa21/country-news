@@ -1,0 +1,17 @@
+<div class="selection row">
+
+    <div class="col-md-4 curs" [ngClass]="{after:in}">
+            <a  (click)="intrue()" [routerLink]="['/news','us']"
+            routerLinkActive="true" [routerLinkActiveOptions]="{exact:true}">India</a>
+        </div>
+
+<div class="col-md-4 curs" [ngClass]="{after:us}">
+    <a  (click)="ustrue()" [routerLink]="['/news','us']"
+    routerLinkActive="true">United States</a>
+</div>
+
+<div class="col-md-4 curs" [ngClass]="{after:ch}">
+    <a (click)="chtrue()" [routerLink]="['/news','ch']"
+    routerLinkActive="true">China</a>
+</div>
+</div>

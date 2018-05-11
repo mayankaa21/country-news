@@ -1,0 +1,14 @@
+
+<div class="newsstack">
+
+  <div class="newscard row" *ngFor="let news of articles">
+    <img [src]="news.imageUrl" class="cardimage" alt="Card image cap">
+    <div class="info">
+    <a [href]="news.fullurl" target = "_blank"style="text-decoration:none"> <h4 class="title">{{ news.title }}</h4> </a>
+      <p class="details"><small><strong style="color:black;font-size:14px;">news</strong><span class="det"> by {{ news.author }} / {{ news.publishedTime }}  on {{ news.publishDate }}</span>
+      </small></p>
+      <p class="desc" style="font-weight:500;">{{ news.description }}</p>      
+    </div>
+  </div>
+
+</div>
